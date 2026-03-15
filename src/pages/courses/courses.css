@@ -1,0 +1,12 @@
+@import '../../assets/colors.css';
+@import '../../assets/site.css';
+@import '../../assets/navbar.css';
+@import '../../assets/utilities.css';
+@import '../../assets/form.css';
+@import '../../assets/spinner.css';
+@import '../../assets/course-card.css';
+
+.courses-hero {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}

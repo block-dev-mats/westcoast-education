@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | WestCoast Education</title>
+    <link rel="stylesheet" href="./courses.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="../popular/popular.html">Popular</a>
+          <a href="./courses.html">Courses</a>
+          <a href="../login/login.html">Login</a>
+          <a href="../register/register.html">Register</a>
+          <a href="../admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="courses-page">
+      <section class="courses-hero">
+        <p class="courses-hero__eyebrow">WestCoast Education</p>
+        <h1 class="page-title">All Courses</h1>
+        <p id="courses-text" class="page-text">
+          Browse our current IT courses. Each course card leads to a details page
+          where you can read more and book the course.
+        </p>
+      </section>
+      <section id="courses-status"></section>
+      <section class="courses-grid" id="courses-grid"></section>
+    </main>
+    <script
+      type="module"
+      src="../../../dist/pages/courses/courses.js"
+      defer></script>
+  </body>
+</html>

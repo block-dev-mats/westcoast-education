@@ -1,0 +1,32 @@
+:root {
+  --color-background: #f4efe8;
+  --color-surface: #fffaf5;
+  --color-text: #1f2933;
+  --color-muted: #52606d;
+  --color-accent: #b4542e;
+  --color-accent-dark: #8f3f20;
+  --color-accent-muted: #8b6b5b;
+  --color-accent-muted-dark: #6f5447;
+  --color-accent-soft: rgba(180, 84, 46, 0.12);
+  --color-accent-soft-hover: rgba(180, 84, 46, 0.2);
+  --color-border: #d9c8b8;
+  --color-surface-overlay: rgba(255, 255, 255, 0.6);
+  --color-surface-overlay-light: rgba(255, 255, 255, 0.55);
+  --color-surface-overlay-strong: rgba(255, 255, 255, 0.98);
+  --color-surface-overlay-warm: rgba(255, 248, 241, 0.98);
+  --color-overlay-dark: rgba(31, 41, 51, 0.45);
+  --color-image-warm-start: #f5e1d3;
+  --color-image-warm-end: #e8c9b4;
+  --color-image-soft-start: #f3dfcc;
+  --color-image-soft-end: #edd0bb;
+  --color-white: #ffffff;
+  --color-success: #1f6b4b;
+  --color-success-background: rgba(54, 179, 126, 0.12);
+  --color-error: #8f2f2f;
+  --color-error-dark: #6f2323;
+  --color-error-background: rgba(201, 74, 74, 0.12);
+  --shadow-soft: 0 18px 40px rgba(31, 41, 51, 0.08);
+  --radius-large: 1.5rem;
+  --radius-medium: 1rem;
+  --page-width: 1100px;
+}

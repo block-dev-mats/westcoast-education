@@ -1,0 +1,38 @@
+.site-header {
+  width: min(100% - 2rem, var(--page-width));
+  margin: 0 auto;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  backdrop-filter: blur(12px);
+}
+
+.site-nav__brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-nav__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav__links a {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  color: var(--color-muted);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav__links a:hover {
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}

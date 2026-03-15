@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current / Popular Courses | WestCoast Education</title>
+    <link rel="stylesheet" href="./popular.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="./popular.html">Popular</a>
+          <a href="../courses/courses.html">Courses</a>
+          <a href="../login/login.html">Login</a>
+          <a href="../register/register.html">Register</a>
+          <a href="../admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="popular-page">
+      <section class="popular-hero">
+        <p class="popular-hero__eyebrow">WestCoast Education</p>
+        <h1 class="page-title">Popular Courses</h1>
+        <p id="popular-text" class="page-text">
+          A smaller selection of courses that are popular right now.
+        </p>
+      </section>
+      <section id="popular-status"></section>
+      <section class="popular-grid courses-grid" id="popular-grid"></section>
+    </main>
+    <script
+      type="module"
+      src="../../../dist/pages/popular/popular.js"
+      defer></script>
+  </body>
+</html>

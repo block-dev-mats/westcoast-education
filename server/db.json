@@ -1,0 +1,270 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Modern JavaScript",
+      "courseNumber": "JS-101",
+      "days": 3,
+      "studyMode": [
+        "classroom",
+        "distance"
+      ],
+      "image": "../../assets/images/courses/frontend-patterns.svg",
+      "startDate": "2026-04-15",
+      "price": 6995,
+      "description": "Learn modern JavaScript from basics to practical application.",
+      "isPopular": true
+    },
+    {
+      "id": 2,
+      "title": "TypeScript From Start",
+      "courseNumber": "TS-201",
+      "days": 2,
+      "studyMode": [
+        "distance"
+      ],
+      "image": "../../assets/images/courses/typescript-waves.svg",
+      "startDate": "2026-05-06",
+      "price": 5495,
+      "description": "A practical introduction to TypeScript for web development.",
+      "isPopular": true
+    },
+    {
+      "id": 3,
+      "title": "REST API Basics",
+      "courseNumber": "API-110",
+      "days": 2,
+      "studyMode": [
+        "classroom"
+      ],
+      "image": "../../assets/images/courses/rest-layers.svg",
+      "startDate": "2026-05-20",
+      "price": 4995,
+      "description": "Understand how to work with simple REST APIs in frontend projects.",
+      "isPopular": false
+    },
+    {
+      "id": 4,
+      "title": "Node.js Backend Basics",
+      "courseNumber": "NODE-140",
+      "days": 4,
+      "studyMode": [
+        "classroom",
+        "distance"
+      ],
+      "image": "../../assets/images/courses/backend-node.svg",
+      "startDate": "2026-06-03",
+      "price": 6495,
+      "description": "Build simple REST APIs with Node.js, routing, and local data storage.",
+      "isPopular": true
+    },
+    {
+      "id": 5,
+      "title": "Blockchain Fundamentals",
+      "courseNumber": "BC-101",
+      "days": 3,
+      "studyMode": [
+        "classroom",
+        "distance"
+      ],
+      "image": "../../assets/images/courses/blockchain-network.svg",
+      "startDate": "2026-06-17",
+      "price": 7295,
+      "description": "Learn how blockchains work, from transactions and wallets to smart contracts.",
+      "isPopular": true
+    },
+    {
+      "id": 6,
+      "title": "Smart Contracts with Solidity",
+      "courseNumber": "SOL-220",
+      "days": 5,
+      "studyMode": [
+        "distance"
+      ],
+      "image": "../../assets/images/courses/smart-contracts.svg",
+      "startDate": "2026-07-01",
+      "price": 8495,
+      "description": "Write, test, and deploy simple smart contracts with Solidity.",
+      "isPopular": true
+    },
+    {
+      "id": 7,
+      "title": "Web3 Frontend Integration",
+      "courseNumber": "WEB3-205",
+      "days": 2,
+      "studyMode": [
+        "classroom"
+      ],
+      "image": "../../assets/images/courses/web3-wallet.svg",
+      "startDate": "2026-07-14",
+      "price": 5895,
+      "description": "Connect frontend apps to wallets and smart contracts using common Web3 tools.",
+      "isPopular": false
+    },
+    {
+      "title": "Pine Script v6",
+      "courseNumber": "PINE-452",
+      "days": 7,
+      "price": 4395,
+      "studyMode": [
+        "distance"
+      ],
+      "image": "../../assets/images/courses/default-course.svg",
+      "startDate": "2026-04-01",
+      "description": "Learn how to create custom trading indicators for TradingView.",
+      "isPopular": false,
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Anna Svensson",
+      "billingAddress": "Storgatan 1, 411 01 Goteborg",
+      "email": "anna@example.com",
+      "phone": "0701234567",
+      "password": "123456"
+    },
+    {
+      "name": "Mats Ljungberg",
+      "billingAddress": "Mässvägen 2A",
+      "email": "mats.ljungberg@medieinstitutet.se",
+      "phone": "0734405069",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Erik Larsson",
+      "billingAddress": "Södra vägen 8, 412 54 Göteborg",
+      "email": "erik@example.com",
+      "phone": "0701112233",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "name": "Sara Nilsson",
+      "billingAddress": "Linnégatan 14, 413 04 Göteborg",
+      "email": "sara@example.com",
+      "phone": "0702223344",
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "name": "Johan Persson",
+      "billingAddress": "Kungsgatan 19, 411 19 Göteborg",
+      "email": "johan@example.com",
+      "phone": "0703334455",
+      "password": "123456"
+    },
+    {
+      "id": 6,
+      "name": "Emma Andersson",
+      "billingAddress": "Östra Hamngatan 6, 411 09 Göteborg",
+      "email": "emma@example.com",
+      "phone": "0704445566",
+      "password": "123456"
+    },
+    {
+      "name": "Mats Ljungberg",
+      "billingAddress": "Kungsgatan 1, 120 35 Stockholm",
+      "email": "mats.ljungberg@gmail.se",
+      "phone": "0734405069",
+      "password": "123456",
+      "id": 7
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "courseId": 1,
+      "userId": 1,
+      "bookingType": "distance",
+      "createdAt": "2026-03-11"
+    },
+    {
+      "courseId": 1,
+      "userId": 2,
+      "bookingType": "distance",
+      "createdAt": "2026-03-11",
+      "id": 2
+    },
+    {
+      "courseId": 2,
+      "userId": 2,
+      "bookingType": "distance",
+      "createdAt": "2026-03-11",
+      "id": 3
+    },
+    {
+      "courseId": 4,
+      "userId": 2,
+      "bookingType": "classroom",
+      "createdAt": "2026-03-12",
+      "id": 4
+    },
+    {
+      "courseId": 4,
+      "userId": 3,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 5
+    },
+    {
+      "courseId": 1,
+      "userId": 4,
+      "bookingType": "classroom",
+      "createdAt": "2026-03-12",
+      "id": 6
+    },
+    {
+      "courseId": 6,
+      "userId": 5,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 7
+    },
+    {
+      "courseId": 6,
+      "userId": 6,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 8
+    },
+    {
+      "courseId": 6,
+      "userId": 3,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 9
+    },
+    {
+      "courseId": 5,
+      "userId": 4,
+      "bookingType": "classroom",
+      "createdAt": "2026-03-12",
+      "id": 10
+    },
+    {
+      "courseId": 5,
+      "userId": 2,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 11
+    },
+    {
+      "courseId": 2,
+      "userId": 6,
+      "bookingType": "distance",
+      "createdAt": "2026-03-12",
+      "id": 12
+    },
+    {
+      "courseId": 7,
+      "userId": 5,
+      "bookingType": "classroom",
+      "createdAt": "2026-03-12",
+      "id": 13
+    }
+  ]
+}

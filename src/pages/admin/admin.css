@@ -1,0 +1,272 @@
+@import '../../assets/colors.css';
+@import '../../assets/site.css';
+@import '../../assets/navbar.css';
+@import '../../assets/utilities.css';
+@import '../../assets/form.css';
+@import '../../assets/spinner.css';
+
+.admin-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 2rem;
+}
+
+.admin-card {
+  padding: 2rem;
+}
+
+.admin-card__header {
+  margin-bottom: 1rem;
+}
+
+.admin-card__header h2 {
+  margin: 0 0 0.5rem;
+}
+
+.admin-card__text {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.admin-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.admin-course-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-course-row:last-child {
+  border-bottom: 0;
+}
+
+.admin-course__edit {
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0;
+  border-radius: 0.85rem;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.admin-course__edit:hover {
+  background: var(--color-accent-soft-hover);
+  color: var(--color-accent-dark);
+}
+
+.admin-course__content {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.admin-course__main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.admin-course__main h3,
+.booking-item h3 {
+  margin: 0;
+}
+
+.admin-course__main p {
+  margin: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.admin-course__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.admin-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-form__field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.admin-form__field span,
+.admin-form__modes legend {
+  font-weight: 600;
+}
+
+.admin-form__field input,
+.admin-form__field select,
+.admin-form__field textarea {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+}
+
+.admin-form__field textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.admin-form__help {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.admin-form__modes {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+}
+
+.admin-form__checkbox {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.booking-item,
+.admin-empty,
+.admin-feedback {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: var(--color-surface-overlay);
+}
+
+.booking-item p {
+  margin: 0.35rem 0 0;
+}
+
+.admin-empty {
+  color: var(--color-muted);
+}
+
+.admin-feedback--success {
+  color: var(--color-success);
+  background: var(--color-success-background);
+}
+
+.admin-feedback--error {
+  color: var(--color-error);
+  background: var(--color-error-background);
+}
+
+.admin-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--color-overlay-dark);
+  z-index: 20;
+}
+
+.admin-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(100% - 2rem, 42rem);
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  translate: -50% -50%;
+  padding: 1.5rem;
+  z-index: 21;
+}
+
+.admin-modal.show,
+.admin-overlay.show {
+  display: block;
+}
+
+.admin-modal__header,
+.admin-modal__buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-modal__header {
+  margin-bottom: 1rem;
+}
+
+.admin-modal__header h2 {
+  margin: 0;
+}
+
+.admin-modal__buttons {
+  justify-content: flex-end;
+}
+
+.admin-modal__secondary {
+  background: var(--color-accent-muted);
+}
+
+.admin-modal__secondary:hover {
+  background: var(--color-accent-muted-dark);
+}
+
+.admin-modal__danger {
+  margin-right: auto;
+  background: var(--color-error);
+}
+
+.admin-modal__danger:hover {
+  background: var(--color-error-dark);
+}
+
+.admin-message {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-card,
+  .admin-modal {
+    padding: 1.5rem;
+  }
+
+  .admin-course-row,
+  .admin-modal__header,
+  .admin-modal__buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-modal__header,
+  .admin-modal__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

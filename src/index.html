@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WestCoast Education</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a class="site-nav__brand" href="./index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="./pages/popular/popular.html">Popular</a>
+          <a href="./pages/courses/courses.html">Courses</a>
+          <a href="./pages/login/login.html">Login</a>
+          <a href="./pages/register/register.html">Register</a>
+          <a href="./pages/admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero home-hero surface">
+        <div class="home-hero__content">
+          <p class="section-eyebrow">WestCoast Education</p>
+          <h1 class="page-title">Modern IT courses for classroom and distance learning</h1>
+          <p class="page-text">
+            Explore practical courses in frontend, backend, TypeScript and blockchain.
+            Study on campus or at a distance and book your place directly online.
+          </p>
+          <div class="home-hero__actions">
+            <a class="btn" href="./pages/popular/popular.html">View popular courses</a>
+            <a class="home-link" href="./pages/courses/courses.html">Browse all courses</a>
+          </div>
+          <div class="home-stats">
+            <article class="home-stat">
+              <strong>8+</strong>
+              <span>Current example courses</span>
+            </article>
+            <article class="home-stat">
+              <strong>2</strong>
+              <span>Study modes available</span>
+            </article>
+            <article class="home-stat">
+              <strong>Local</strong>
+              <span>Booking flow with json-server</span>
+            </article>
+          </div>
+        </div>
+        <div class="home-hero__media">
+          <img
+            class="home-hero__image"
+            src="./assets/images/courses/frontend-patterns.svg"
+            alt="Abstract course illustration" />
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="home-section__heading">
+          <p class="section-eyebrow">Why students choose us</p>
+          <h2 class="section-title">Simple booking and practical course content</h2>
+        </div>
+        <div class="home-grid">
+          <article class="home-card surface">
+            <h3>Current and popular courses</h3>
+            <p>
+              Start with the popular courses page to quickly see which courses attract the most bookings right now.
+            </p>
+          </article>
+          <article class="home-card surface">
+            <h3>Clear course details</h3>
+            <p>
+              Each course page shows the key information you need before booking: duration, study mode, date and price.
+            </p>
+          </article>
+          <article class="home-card surface">
+            <h3>Flexible study options</h3>
+            <p>
+              Choose a course that fits your schedule, whether you prefer classroom teaching or distance studies.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-section">
+        <div class="home-section__heading">
+          <p class="section-eyebrow">Get started</p>
+          <h2 class="section-title">A simple path from interest to booking</h2>
+        </div>
+        <div class="home-steps">
+          <article class="home-step surface">
+            <span class="home-step__number">1</span>
+            <h3>Browse courses</h3>
+            <p>Compare the full catalogue or jump directly to the most popular courses.</p>
+          </article>
+          <article class="home-step surface">
+            <span class="home-step__number">2</span>
+            <h3>Create an account</h3>
+            <p>Register once, stay logged in, and make bookings directly from the course details page.</p>
+          </article>
+          <article class="home-step surface">
+            <span class="home-step__number">3</span>
+            <h3>Book your place</h3>
+            <p>Select classroom or distance learning and confirm your course booking in a few clicks.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../dist/index.js" defer></script>
+  </body>
+</html>

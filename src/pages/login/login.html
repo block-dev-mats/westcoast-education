@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | WestCoast Education</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="../courses/courses.html">Courses</a>
+          <a href="./login.html">Login</a>
+          <a href="../register/register.html">Register</a>
+          <a href="../admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="login-page">
+      <section class="auth-card surface">
+        <h1 class="page-title">Login</h1>
+        <p class="page-text">
+          Login to continue to booking.
+        </p>
+        <form id="login-form" class="auth-form">
+          <label class="auth-form__field" for="email">
+            <span>Email</span>
+            <input id="email" name="email" type="email" maxlength="100" placeholder="anna@example.com" required />
+          </label>
+          <label class="auth-form__field" for="password">
+            <span>Password</span>
+            <input id="password" name="password" type="password" minlength="6" maxlength="40" placeholder="Your password" required />
+          </label>
+          <button class="btn" type="submit">Login</button>
+        </form>
+        <p class="auth-form__footer">
+          <span>No account yet?</span>
+          <a id="register-link" href="../register/register.html">Create one here</a>
+        </p>
+        <section id="login-message"></section>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="../../../dist/pages/login/login.js"
+      defer></script>
+  </body>
+</html>

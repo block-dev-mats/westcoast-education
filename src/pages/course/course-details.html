@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details | WestCoast Education</title>
+    <link rel="stylesheet" href="./course.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="../courses/courses.html">Courses</a>
+          <a href="../login/login.html">Login</a>
+          <a href="../register/register.html">Register</a>
+          <a href="../admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="course-page">
+      <section id="course-status"></section>
+      <section id="course-details" class="course-details surface" hidden>
+        <div class="course-details__image-wrapper">
+          <img
+            id="course-image"
+            class="course-details__image"
+            src=""
+            alt="" />
+        </div>
+        <div class="course-details__content">
+          <p id="course-number" class="course-details__number"></p>
+          <h1 id="course-title" class="page-title"></h1>
+          <p id="course-description" class="course-details__description"></p>
+          <div class="course-details__meta">
+            <div>
+              <span>Days</span>
+              <strong id="course-days"></strong>
+            </div>
+            <div>
+              <span>Study mode</span>
+              <strong id="course-study-mode"></strong>
+            </div>
+            <div>
+              <span>Start date</span>
+              <strong id="course-start-date"></strong>
+            </div>
+            <div>
+              <span>Price</span>
+              <strong id="course-price"></strong>
+            </div>
+          </div>
+          <section class="course-booking surface">
+            <h2>Book course</h2>
+            <form id="course-booking-form">
+              <fieldset class="course-booking__fieldset">
+                <legend>Choose booking type</legend>
+                <label class="course-booking__option">
+                  <input id="booking-classroom" type="radio" name="bookingType" value="classroom" />
+                  Classroom
+                </label>
+                <label class="course-booking__option">
+                  <input id="booking-distance" type="radio" name="bookingType" value="distance" />
+                  Distance
+                </label>
+              </fieldset>
+              <button class="course-details__button btn" type="submit">Book course</button>
+            </form>
+            <section id="course-booking-message"></section>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="../../../dist/pages/course/course.js"
+      defer></script>
+  </body>
+</html>

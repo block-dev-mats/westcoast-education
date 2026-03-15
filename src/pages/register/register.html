@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | WestCoast Education</title>
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="../courses/courses.html">Courses</a>
+          <a href="../login/login.html">Login</a>
+          <a href="./register.html">Register</a>
+          <a href="../admin/admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="register-page">
+      <section class="auth-card surface">
+        <h1 class="page-title">Create Account</h1>
+        <p class="page-text">
+          Create an account to continue to booking.
+        </p>
+        <form id="register-form" class="auth-form">
+          <label class="auth-form__field" for="name">
+            <span>Name</span>
+            <input id="name" name="name" type="text" minlength="2" maxlength="50" placeholder="Anna Svensson" required />
+          </label>
+          <label class="auth-form__field" for="billingAddress">
+            <span>Billing address</span>
+            <input id="billingAddress" name="billingAddress" type="text" minlength="5" maxlength="120" placeholder="Storgatan 1, 411 01 Göteborg" required />
+          </label>
+          <label class="auth-form__field" for="email">
+            <span>Email</span>
+            <input id="email" name="email" type="email" maxlength="100" placeholder="anna@example.com" required />
+          </label>
+          <label class="auth-form__field" for="phone">
+            <span>Mobile phone</span>
+            <input id="phone" name="phone" type="tel" minlength="7" maxlength="15" pattern="^[0-9+\\-\\s]{7,15}$" placeholder="0701234567" required />
+          </label>
+          <label class="auth-form__field" for="password">
+            <span>Password</span>
+            <input id="password" name="password" type="password" minlength="6" maxlength="40" placeholder="Minst 6 tecken" required />
+          </label>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+        <p class="auth-form__footer">
+          <span>Already registered?</span>
+          <a id="login-link" href="../login/login.html">Login here</a>
+        </p>
+        <section id="register-message"></section>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="../../../dist/pages/register/register.js"
+      defer></script>
+  </body>
+</html>

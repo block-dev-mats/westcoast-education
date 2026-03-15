@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | WestCoast Education</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav surface">
+        <a href="../../index.html">WestCoast Education</a>
+        <div class="site-nav__links">
+          <a href="../courses/courses.html">Courses</a>
+          <a href="../login/login.html">Login</a>
+          <a href="../register/register.html">Register</a>
+          <a href="./admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="admin-page">
+      <section class="admin-hero">
+        <h1 class="page-title">Admin</h1>
+        <p class="page-text">
+          Add new courses, update existing courses, and review bookings for each course.
+        </p>
+        <div class="admin-actions">
+          <button id="open-create-course" class="btn" type="button">Add new course</button>
+        </div>
+        <section id="admin-message"></section>
+      </section>
+
+      <section class="admin-layout">
+        <article class="admin-card surface">
+          <div class="admin-card__header">
+            <h2>Courses</h2>
+            <p class="admin-card__text">Choose the pencil icon to edit a course.</p>
+          </div>
+          <section id="courses-list" class="admin-list"></section>
+        </article>
+
+        <article class="admin-card surface">
+          <div class="admin-card__header">
+            <h2>Bookings per course</h2>
+            <p class="admin-card__text">Select a course to see who has booked it.</p>
+          </div>
+          <label id="course-select-field" class="admin-form__field" for="course-select">
+            <span>Select course</span>
+            <select id="course-select"></select>
+          </label>
+          <section id="bookings-list"></section>
+        </article>
+      </section>
+    </main>
+
+    <section id="overlay" class="admin-overlay"></section>
+    <section id="modal" class="admin-modal surface">
+      <div class="admin-modal__header">
+        <h2 id="modal-title">Add new course</h2>
+        <button id="close-modal" class="btn admin-modal__secondary" type="button">Cancel</button>
+      </div>
+
+      <form id="course-form" class="admin-form">
+        <label class="admin-form__field" for="title">
+          <span>Course title</span>
+          <input id="title" name="title" type="text" minlength="3" maxlength="80" placeholder="Modern JavaScript" required />
+        </label>
+        <label class="admin-form__field" for="courseNumber">
+          <span>Course number</span>
+          <input id="courseNumber" name="courseNumber" type="text" minlength="3" maxlength="20" placeholder="JS-101" required />
+        </label>
+        <label class="admin-form__field" for="days">
+          <span>Number of days</span>
+          <input id="days" name="days" type="number" min="1" max="30" placeholder="3" required />
+        </label>
+        <label class="admin-form__field" for="price">
+          <span>Price</span>
+          <input id="price" name="price" type="number" min="0" max="50000" placeholder="6995" required />
+        </label>
+        <label class="admin-form__field" for="startDate">
+          <span>Start date</span>
+          <input id="startDate" name="startDate" type="date" required />
+        </label>
+        <fieldset class="admin-form__modes">
+          <legend>Study modes</legend>
+          <label class="admin-form__checkbox" for="studyMode-classroom">
+            <input id="studyMode-classroom" type="checkbox" />
+            Classroom
+          </label>
+          <label class="admin-form__checkbox" for="studyMode-distance">
+            <input id="studyMode-distance" type="checkbox" />
+            Distance
+          </label>
+        </fieldset>
+        <label class="admin-form__field" for="description">
+          <span>Description</span>
+          <textarea id="description" name="description" rows="4" minlength="15" maxlength="240" placeholder="Learn modern JavaScript from basics to practical application." required></textarea>
+        </label>
+        <label class="admin-form__field" for="image">
+          <span id="image-label">Course image</span>
+          <input id="image" name="image" type="file" accept="image/*" />
+          <small class="admin-form__help">Recommended image size: 1200 x 800 px</small>
+        </label>
+        <div class="admin-modal__buttons">
+          <button id="delete-course" class="btn admin-modal__danger" type="button" hidden>Delete course</button>
+          <button id="cancel-course-form" class="btn admin-modal__secondary" type="button">Cancel</button>
+          <button id="save-course" class="btn" type="submit">Save course</button>
+        </div>
+        <section id="modal-message"></section>
+      </form>
+    </section>
+
+    <script
+      type="module"
+      src="../../../dist/pages/admin/admin.js"
+      defer></script>
+  </body>
+</html>
